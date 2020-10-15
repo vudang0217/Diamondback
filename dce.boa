@@ -1,0 +1,17 @@
+(def test () : Bool 
+    (while false 
+        (let ((x 10))
+            (while (> x 0)
+                (print x)
+                (set x (- x 1))
+            )
+        )
+    )
+    (if true 10 20)
+    (if false
+        (if true 15 19)
+        20
+    )
+    true
+)
+(test)

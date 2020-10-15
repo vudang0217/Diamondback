@@ -1,0 +1,27 @@
+(data Pair (Num Num))
+(data Triplet (Num Num Num))
+(def makePair () : Pair
+    (Pair 1 2)
+)
+(def makeTriplet () : Triplet
+    (Triplet 3 4 5)
+)
+(def test () : Bool
+    (makeTriplet)
+    (let ((x (makePair)))
+        (makePair)
+        (makePair)
+        (makePair)
+        (makeTriplet)
+        (makeTriplet)
+    )
+    (let ((y (makeTriplet)))
+        (makePair)
+        (makeTriplet)
+        (makePair)
+    )
+    (let ((z (makePair)))
+        true
+    )
+)
+(test)

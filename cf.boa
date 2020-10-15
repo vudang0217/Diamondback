@@ -1,0 +1,10 @@
+(def test () : Bool
+    (+ (- 24 4) 80)
+    (* 8 12)
+    (let ((x (+ 1 5)) (y (* 13  3)))
+        (isNum 6)
+        (isBool true) 
+    )
+)
+
+(test)

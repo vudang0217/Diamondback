@@ -1,0 +1,10 @@
+(def test () : Bool 
+    (let ((x 2))
+        (if (isBool (+ x 5)) 99 105)
+    )
+    (let ((y true))
+        (== (isNum (while false (isBool y))) false)
+    )
+    true
+)
+(test)
